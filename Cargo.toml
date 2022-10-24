@@ -1,0 +1,20 @@
+[package]
+name = "cucumber-steps-as-library"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = ["steps"]
+
+[dependencies]
+
+[dev-dependencies]
+cucumber = "0.15.1"
+steps = { path = "steps" }
+tokio = { version = "1.21.2", features = ["macros", "rt"] }
+
+[[test]]
+name = "cucumber"
+harness = false
