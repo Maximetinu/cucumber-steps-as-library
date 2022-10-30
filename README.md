@@ -6,7 +6,7 @@ This repo is a basic example of how to use [`cucumber`] steps as a separate libr
 - `/src` contains library to test
 - `/steps` contains common steps as a library
 - `/tests/cucumber.rs` contains additional steps
-- `/features` contains features to test library with
+- `/tests/features` contains features to test library with
 
 ```commandline
 cargo test --test cucumber
