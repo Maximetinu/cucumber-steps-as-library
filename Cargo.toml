@@ -11,7 +11,7 @@ members = ["steps"]
 [dependencies]
 
 [dev-dependencies]
-cucumber = "0.15.1"
+cucumber = "0.16"
 steps = { path = "steps" }
 tokio = { version = "1.21.2", features = ["macros", "rt"] }
 
