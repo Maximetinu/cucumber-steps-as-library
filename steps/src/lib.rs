@@ -1,9 +1,9 @@
 use std::path::Path;
 
 use cucumber::{given, then, when, World as _};
+use world::World;
 
-#[derive(Clone, Debug, Default, cucumber::World)]
-pub struct World(pub Vec<usize>);
+pub mod world;
 
 #[given(regex = "^I stored (\\d+)$")]
 #[when(regex = "^I store (\\d+)$")]
